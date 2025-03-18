@@ -5,7 +5,7 @@
       <div class="flex flex-col max-w-lg gap-10 md:gap-[60px] m-auto px-4 md:px-0">
         <div class="container mx-auto">
           <div class="mb-6 md:mb-8">
-            <h1 class="text-4xl md:text-5xl font-medium text-black-100 leading-tight" style="font-weight: 600;">
+            <h1 class="text-4xl md:text-5xl font-medium text-black-100" style="font-weight: 600; line-height: 60px;">
               Regional Breakdown <br>
               of Asbestos Legacy <br>
               in Australia
@@ -32,10 +32,9 @@
             (mouseleave)="hoveredButton = null"
             [class.bg-lime-200]="hoveredButton === 'wa'"
           >
-          <div class="h-12 w-12 flex items-center justify-center rounded-[2rem] mb-4">
-            <img src="assets/Frame 40.png" alt="Mesothelioma Resources & Support" class="w-full h-full object-cover" />
-  
-          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
           </button>
         </div>
         <div class="px-6 pb-6 overflow-hidden transition-all duration-300" *ngIf="expandedRegions['wa']">
